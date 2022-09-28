@@ -1,0 +1,231 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+form, form *, tbody, tr, td, td * {
+    opacity: 1 !important;
+}
+
+
+
+.back {
+    position: absolute;
+    z-index: 40;
+
+    width: 70px;
+
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+
+.coalitions {
+    padding-top: 75px;
+    padding-bottom: 65px;
+    flex: 1;
+}
+
+.coalitions h1 {
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-bottom: 50px;
+}
+
+.coalitions .table-responsive {
+    width: max-content;
+    overflow-x: hidden;
+
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.coalitions .table-responsive .table tr {
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 0.6px;
+}
+
+.coalitions .table-responsive .table th {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.coalitions .table-responsive .table tr td .color {
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    padding: 15px;
+    
+    border-radius: 65px5px;
+}
+
+.coalitions .table-responsive .btn.add {
+    margin-bottom: 30px;
+}
+
+.coalitions .table-responsive .form-add {
+    width: 280px;
+
+    padding: 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.coalitions .table-responsive .form-add input {
+    margin-bottom: 10px;
+}
+
+.coalitions .table-responsive .form-add input[type="text"]:focus,
+.coalitions .table-responsive .form-add input[type="color"]:focus {   
+    border-color: none;
+    box-shadow: none;
+    outline: 0 none;
+}
+
+.coalitions .table-responsive .form-add input[type="color"] {
+    height: 38px;
+}
+
+.coalitions .table-responsive .form-add .btn-group {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.coalitions .table-responsive .form-add .btn-group .btn {
+    width: 100px;
+}
+
+
+
+.connect {
+    width: 100%;
+    height: auto;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+
+    bottom: 0;
+    left: 0;
+    
+    background: var(--main-bg-yellow);
+    text-align: center !important
+}
+
+.connect .bye {
+    width: 98%;
+    margin-left: 50%;
+    transform: translateX(-50%)
+}
+
+.connect a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--main-text-black);
+
+    border-radius: 50%;
+    border: 2px solid var(--main-text-black);
+    margin: 0 10px;
+
+    transition: .3s ease;
+    cursor: pointer
+}
+.connect a:hover {
+    background: var(--main-text-black);
+    color: var(--main-bg-white);
+}
+
+.connect i {
+    padding-top: 13px
+}
+
+.connect h5 {
+    font-size: 18px!important;
+    color: var(--main-text-black);
+    letter-spacing: 1px;
+
+    margin-top: 1.2rem
+}
+
+
+
+@media (min-width: 320px) and (max-width: 480px) { /* Smartphone */
+    .back {
+        position: unset;
+    }
+
+    .coalitions {
+        padding-top: 35px;
+    }
+
+    .coalitions h1 {
+        margin-bottom: 30px;
+    }
+
+    .coalitions .table-responsive, .accounts .table-responsive {
+        width: 90%;
+    }
+
+    .coalitions .table-responsive .table th, .accounts .table-responsive .table th {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .accounts .table-responsive .table tr td .form-control, .coalitions .table-responsive .table tr td .form-control {
+        padding: 0.3rem 0.66rem;
+    }
+
+    .coalitions .table-responsive .table .btn, .accounts .table-responsive .table .btn {
+        font-size: 14px;
+
+        padding: 0.5rem 0.7rem;
+    }
+
+    .coalitions .table-responsive .table td, .accounts .table-responsive .table td {
+        font-size: 14px;
+    }
+
+    .connect {
+        padding-top: 5.5rem;
+        padding-bottom: 5rem
+    }
+
+    .connect h3 {
+        font-size: 18px;
+        margin-bottom: 1rem
+    }
+
+    .connect h3 {
+        font-size: 18px;
+        margin-bottom: 1rem
+    }
+
+    .connect a {
+        width: 48px;
+        height: 48px;
+        font-size: 21px;
+        margin: 0 8px
+    }
+
+    .connect i {
+        padding-top: 12px
+    }
+    
+    .connect h5 {
+        font-size: 16px!important;
+        margin-top: 1rem
+    }
+}

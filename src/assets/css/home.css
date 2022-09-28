@@ -1,0 +1,381 @@
+.settings {
+    position: absolute;
+    z-index: 40;
+
+    width: 70px;
+
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+
+.welcome {
+    position: relative;
+    
+    height: 100%;
+    margin-bottom: 50px;
+
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+    background: var(--main-bg-yellow);
+
+    color: var(--main-bg-white);
+}
+
+.welcome .intro {
+    position: absolute;
+    width: 60%;
+
+    top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    
+    text-align: center;
+    color: var(--main-text-black);
+}
+
+.welcome .intro h1 {
+    font-weight: 800;
+}
+
+.welcome .intro h4 {
+    color: var(--main-text-black);
+    font-size: 1.33rem;
+    font-family: 'Poor Story', cursive;
+}
+
+.welcome .intro p {
+    color: var(--main-bg-red);
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+}
+
+
+
+.coalitions {
+    min-height: 100%;
+    margin-bottom: 100px;
+}
+
+.coalitions .list {
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.coalitions .list h1 {
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-bottom: 35px;
+}
+
+.coalitions .list .container {
+    max-width: 75%;
+    width: 45%;
+
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.coalitions .list .container .card {
+    background: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+
+    cursor: pointer;
+    box-shadow: 0px 5px 13px 0 rgba(0,0,0,.2);
+    transition: all .33s ease-in-out
+}
+.coalitions .list .container .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 15px 13px 3px rgba(0,0,0,.2)
+}
+
+.coalitions .list .container .card .color {
+    padding: 15px;
+
+    border: 1px solid #99999970;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.coalitions .list .container .card .name {
+    width: 100%;
+    margin: 0.6rem auto;
+
+    font-weight: 600;
+    text-align: center;
+}
+
+.coalitions .list .container .card .btn {
+    width: max-content;
+    
+    margin-bottom: 15px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    background: var(--main-bg-yellow) !important;
+    border: 1px solid var(--main-bg-yellow) !important;
+
+    color: var(--main-text-black);
+    letter-spacing: 0.2px;
+
+    transition: all .33s ease-in-out;
+}
+.coalitions .list .container .card .btn:hover {
+    background: #fed99b91 !important;
+}
+
+.coalitions .charts {
+    margin-top: 70px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    width: 95%;
+}
+
+.coalitions .charts .doughnuts {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.coalitions .charts .doughnuts .doughnut-chart {
+    width: 100% !important;
+    max-width: 650px; 
+
+    height: auto !important;
+}
+
+.coalitions .charts .bar-chart {
+    margin-top: 50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    width: 100%;
+    max-width: 550px; 
+}
+
+
+
+.accounts {
+    background: var(--main-bg-yellow);
+    min-height: 100%;
+}
+
+.accounts .list {
+    padding-bottom: 70px;
+    padding-top: 50px;
+}
+
+.accounts .list h1 {
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-bottom: 40px;
+}
+
+.accounts .list .container {
+    max-width: 85%;
+    width: 70%;
+
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.accounts .list .container .card {
+    background: var(--main-bg-white);
+    border-radius: 12px;
+
+    padding: 10px 15px;
+
+    cursor: pointer;
+    transition: all .33s ease-in-out
+}
+
+.accounts .list .container .card:hover {
+    transform: scale(1.05);
+}
+
+.accounts .list .container .card img {
+    border: 1px solid rgb(136 136 136 / 56%);
+    border-radius: 100%;
+
+    width: 90px;
+
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.accounts .list .container .card .info {
+    width: 100%;
+
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.accounts .list .container .card .info p {
+    margin: 0rem;
+}
+
+.accounts .list .container .card .info .name {
+    margin-top: 1rem;
+}
+
+.accounts .list .container .card .info .coalition {
+    font-weight: 600;
+}
+
+.accounts .list .container .card .btn {
+    width: max-content;
+    
+    margin-top: 0.7rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    color: var(--main-bg-white);
+
+    background: var(--main-bg-red);
+    border: 1px solid var(--main-bg-red);
+
+    transition: all .33s ease-in-out;
+}
+.accounts .list .container .card .btn:hover {
+    background: #d1071f;
+    border: 1px solid #d1071f;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) { /* Tablet */
+    .welcome .intro {
+        width: 80%;
+    }
+
+    .coalitions .list {
+        margin-top: 75px;
+    }
+
+    .coalitions .list h1 {
+        margin-bottom: 40px;
+    }
+
+    .coalitions .list .container {
+        width: 85%;
+        max-width: 100%;
+    }
+
+    .coalitions .charts .doughnuts {
+        display: grid;
+        grid-gap: 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .coalitions .charts .doughnuts .doughnut-chart {
+        margin-bottom: 3rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .coalitions .charts .bar-chart {
+        margin-top: auto;
+    }
+
+    .accounts .list h1 {
+        margin-bottom: 45px;
+    }
+
+    .accounts .list .container {
+        max-width: 100%;
+        width: 95%;
+
+        grid-gap: 40px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) { /* Smartphone */
+    .welcome .intro {
+        width: 80%;
+    }
+
+    .welcome .intro h4 {
+        font-size: 1.25rem;
+    }
+
+    .welcome .intro p {
+        font-size: 13px;
+    }
+
+    .coalitions .list {
+        margin-top: 75px;
+    }
+
+    .coalitions .list h1 {
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+
+        margin-bottom: 40px;
+    }
+
+    .coalitions .list .container {
+        width: 75%;
+        max-width: 100%;
+
+        grid-gap: 27px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .coalitions .charts {
+        width: 99%;
+    }
+
+    .coalitions .charts .doughnuts {
+        grid-gap: 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .coalitions .charts .doughnuts .doughnut-chart {
+        margin-bottom: 3rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .coalitions .charts .bar-chart {
+        margin-top: auto;
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+        width: 92% !important;
+    }
+
+    .accounts .list h1 {
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+
+        margin-bottom: 45px;
+    }
+
+    .accounts .list .container {
+        width: 75%;
+        max-width: 100%;
+
+        grid-gap: 27px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

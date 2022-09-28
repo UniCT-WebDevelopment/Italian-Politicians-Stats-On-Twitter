@@ -1,0 +1,165 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+form, form *, tbody, tr, td, td * {
+    opacity: 1 !important;
+}
+
+
+
+.back {
+    position: absolute;
+    z-index: 40;
+
+    width: 70px;
+
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+
+.accounts {
+    padding-top: 60px;
+    padding-bottom: 65px;
+    flex: 1;
+}
+
+.accounts h1 {
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-bottom: 40px;
+}
+
+.accounts #name {
+    text-align: center;
+    font-weight: 600;
+
+    margin-bottom: 0.2rem;
+}
+
+.accounts #color {
+    width: 210px;
+    
+    padding: 1.5rem;
+
+    margin-bottom: 45px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    border: 1px solid rgb(136 136 136 / 56%);
+    border-radius: 10px;
+}
+
+.accounts .table-responsive {
+    width: max-content;
+    overflow-x: hidden;
+
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.accounts .table-responsive .table tr {
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 0.6px;
+}
+
+.accounts .table-responsive .table th {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.accounts .table-responsive .table tr td .color {
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    padding: 15px;
+    
+    border-radius: 65px;
+}
+
+.accounts .table-responsive .btn.add {
+    margin-bottom: 30px;
+}
+
+.accounts .table-responsive .form-add {
+    width: 280px;
+
+    padding: 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.accounts .table-responsive .form-add input, .accounts .table-responsive .form-add select {
+    margin-bottom: 10px;
+}
+
+.accounts .table-responsive .form-add input[type="text"]:focus,
+.accounts .table-responsive .form-add input[type="color"]:focus {   
+    border-color: none;
+    box-shadow: none;
+    outline: 0 none;
+}
+
+.accounts .table-responsive .form-add input[type="color"] {
+    height: 38px;
+}
+
+.accounts .table-responsive .form-add .btn-group {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.accounts .table-responsive .form-add .btn-group .btn {
+    width: 100px;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 480px) { /* Smartphone */
+    .back {
+        position: unset;
+    }
+
+    .accounts {
+        padding-top: 35px;
+    }
+
+    .accounts h1 {
+        margin-bottom: 30px;
+    }
+
+    .accounts .table-responsive, .accounts .table-responsive {
+        width: 90%;
+    }
+
+    .accounts .table-responsive .table th, .accounts .table-responsive .table th {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .accounts .table-responsive .table tr td .form-control, .accounts .table-responsive .table tr td .form-control {
+        padding: 0.3rem 0.66rem;
+    }
+
+    .accounts .table-responsive .table .btn, .accounts .table-responsive .table .btn {
+        font-size: 14px;
+
+        padding: 0.5rem 0.7rem;
+    }
+
+    .accounts .table-responsive .table td, .accounts .table-responsive .table td {
+        font-size: 14px;
+    }
+}

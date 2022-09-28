@@ -1,0 +1,212 @@
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+
+    z-index: 40;
+}
+
+.buttons .back, .buttons .settings {
+    width: 70px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.buttons .settings {
+    margin-left: 10px;
+}
+
+
+
+.profile {
+    padding-top: 35px;
+}
+
+.profile #name {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 600;
+
+    margin-bottom: 0.2rem;
+}
+
+.profile #color {
+    width: 250px;
+    
+    padding: 1.75rem;
+
+    margin-bottom: 45px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    border: 1px solid rgb(136 136 136 / 56%);
+    border-radius: 10px;
+}
+
+.profile .metrics {
+    max-width: 100% !important;
+    width: 75%;
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.profile .metrics .col .metric {
+    width: 75%;
+
+    border-bottom: 4px solid var(--main-bg-red);
+
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile .metrics .col .metric .title {
+    margin-bottom: 0;
+
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.profile .metrics .col .metric .number {
+    margin-bottom: 0.33rem;
+
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+
+
+.accounts {
+    margin-top: 70px;
+    margin-bottom: 40px;
+
+    padding-top: 50px;
+    padding-bottom: 60px;
+
+    background: var(--main-bg-yellow);
+}
+
+.accounts h1 {
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-bottom: 1.8rem;
+}
+
+.accounts .list-group {
+    width: max-content;
+
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.accounts .list-group .list-group-item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    text-align: center;
+}
+
+
+
+.analytics {
+    padding-bottom: 140px;
+}
+
+.analytics .stats {
+    max-width: 90%;
+    width: 90%;
+
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    display: grid;
+    grid-gap: 35px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.analytics .stats .col {
+    margin-top: 1.3rem;
+}
+
+.analytics .stats .col .data {
+    width: 85%;
+
+    border-bottom: 4px solid var(--main-text-blue);
+
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.analytics .stats .col .data .title {
+    margin-bottom: 0;
+
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.analytics .stats .col .data .number {
+    margin-bottom: 0.33rem;
+
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.analytics .stats .col .data .number sub {
+    font-size: 14px;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) { /* Tablet */
+    .profile .metrics {
+        width: 95%;
+        grid-gap: 25px;
+    }
+
+    .profile .metrics .col .metric {
+        width: 85%;
+    }
+
+    .analytics .stats {
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) { /* Smartphone */
+    .buttons {
+        position: unset;
+    }
+
+    .profile {
+        padding-top: 13px;
+    }
+
+    .profile .metrics {
+        grid-gap: 40px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .profile .metrics .col .metric {
+        width: 85%;
+    }
+
+    .analytics .stats {
+        grid-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

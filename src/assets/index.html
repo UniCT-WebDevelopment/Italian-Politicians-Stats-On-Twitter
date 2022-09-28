@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html translate="no">
+    <head>
+
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content="Basic Stats About the Use of Twitter By Italian Politicians."/>
+        <meta name="theme-color" content="#fed99b5e"/>
+        <meta name="author" content="Antonio Scardace">
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/home.css">
+
+        <link rel="icon" type="image/png" sizes="32x32" href="imgs/logo.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="imgs/logo.png">
+
+		<title>Home</title>
+
+    </head>
+    <body>
+
+        <div class="loading-page">
+            <div class="loader-block">
+                <div class="loader"> </div>
+            </div>
+            <p>Loading...</p>
+        </div>
+
+        <section class="real-page">
+
+            <a href="/settings.html"><img class="settings" src="imgs/settings.gif" alt="Settings"/></a>
+
+            <section class="welcome">
+                <div class="intro">
+                    <h1>Italian Politicians' Stats On Twitter</h1>
+                    <br/>
+                    <h4>This is a project for "Web Programming, Design & Usability" - a university subject. The course aims to teach us how to use front-end and back-end languages and technologies. In this project, I have implemented a Twitter API system to analyze the use of Twitter by Italian Politicians of all coalitions. I fetch every day at midnight all metadata about profiles and tweets.</h4>
+                    <br/>
+                    <p>Antonio Scardace - 1000007272</p>
+                </div>
+            </section>
+    
+            <section class="coalitions">
+                <div class="list">
+                    <h1>Political Coalitions</h1>
+                    <div class="container text-center" id="cards-container"> </div>
+                </div>
+        
+                <div class="charts">
+                    <div class="doughnuts">
+                        <canvas id="avgLikes" class="doughnut-chart"></canvas>
+                        <canvas id="avgRetweets" class="doughnut-chart"></canvas>
+                        <canvas id="avgReplies" class="doughnut-chart"></canvas>
+                    </div>
+                    <div class="bar">
+                        <canvas id="avgTweetLen" class="bar-chart"></canvas>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="accounts">
+                <div class="list">
+                    <h1>Analyzed Accounts</h1>
+                    <div class="container text-center" id="accounts-container"> </div>
+                </div>
+            </section>
+
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/home.js"></script>
+    </body>
+</html>

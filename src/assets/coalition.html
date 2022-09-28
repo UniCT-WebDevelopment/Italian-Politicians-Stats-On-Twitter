@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html translate="no">
+    <head>
+
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content="Basic Stats About the Use of Twitter By Italian Politicians."/>
+        <meta name="theme-color" content="#f1c179"/>
+        <meta name="author" content="Antonio Scardace">
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/coalition.css">
+
+        <link rel="icon" type="image/png" sizes="32x32" href="imgs/logo.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="imgs/logo.png">
+
+		<title>Coalition Stats</title>
+
+    </head>
+    <body>
+
+        <div class="loading-page">
+            <div class="loader-block">
+                <div class="loader"> </div>
+            </div>
+            <p>Loading...</p>
+        </div>
+
+        <section class="real-page">
+
+            <div class="buttons">
+                <a href="/index.html"><img class="back" src="imgs/home.gif" alt="Back Home"/></a>
+                <a id="edit-button" href=""><img class="settings" src="imgs/settings.gif" alt="Edit Coalition"/></a>
+            </div>
+            
+            <section class="profile">
+                <p id="name"></p>
+                <div id="color"></div>
+    
+                <div class="container metrics">
+                    <div class="col">
+                        <div class="metric">
+                            <p class="title">Total Followers</p>
+                            <p class="number" id="followers"></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="metric">
+                            <p class="title">Total Tweets</p>
+                            <p class="number" id="tweets"></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="metric">
+                            <p class="title">Analyzed Tweets</p>
+                            <p class="number" id="fetched"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="accounts">
+                <h1>Related Accounts</h1>
+    
+                <ul class="list-group" id="handles"></ul>
+            </section>
+    
+            <section class="analytics">
+                <div class="container stats">
+                    <div class="col">
+                        <div class="data">
+                            <p class="title">Total Likes</p>
+                            <p class="number" id="tot_likes"></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="data">
+                            <p class="title">Total Retweets</p>
+                            <p class="number" id="tot_retweets"></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="data">
+                            <p class="title">Total Replies</p>
+                            <p class="number" id="tot_replies"></p>
+                        </div>
+                    </div>
+    
+                    <div class="col">
+                        <div class="data">
+                            <p class="title">Avg Tweet Length</p>
+                            <p class="number" id="avg_length"></p>
+                        </div>
+                    </div>
+    
+                    <div class="col">
+                        <div class="data">
+                            <p class="title">Avg Likes</p>
+                            <p class="number" id="avg_likes"></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="data">
+                            <p class="title">Avg Retweets</p>
+                            <p class="number" id="avg_retweets"></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="data">
+                            <p class="title">Avg Replies</p>
+                            <p class="number" id="avg_replies"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/coalition.js"></script>
+
+    </body>
+</html>
