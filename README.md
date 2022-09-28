@@ -30,11 +30,7 @@ The statistics (about the last 24hs) that can be made for each Twitter Account a
 
 ## Structure
 
-![Project UML](/docs/imgs/server-uml.svg)
-
-<img alt="Database ER Model" src="/docs/imgs/db-er.svg" style="width: 500px;"/>
-
-The project also contains **.env** that is a configuration file. <br/>
+The project contains **.env** that is a configuration file. <br/>
 It contains some system variables which you can modify: 
 
 - ``DB_HOST``: is the IP address of the database.
@@ -43,11 +39,6 @@ It contains some system variables which you can modify:
 - ``DB_PASSWORD``: is the Password to connect to the database.
 - ``DB_NAME``: is the database Name. <br/>
 - ``BEARER_TOKEN``: is the Token to fetch data by Twitter APIs.
-
-## Light Demo
-
-![Screen 1](/docs/imgs/screen-1.png)
-![Screen 2](/docs/imgs/screen-2.png)
 
 ## Getting Started
 
